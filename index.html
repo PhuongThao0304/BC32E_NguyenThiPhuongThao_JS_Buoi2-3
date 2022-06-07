@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bai tap JS Buoi 2 + 3</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+  <!-- Bai 1 -->
+  <div class="Bai1">
+    <div class="container">
+      <h3>TÍNH TIỀN LƯƠNG NHÂN VIÊN</h3>
+      <div class="form-group">
+        <h4>Lương 1 ngày (VNĐ)</h4>
+        <input class="form-control w-25" id="wageHour" />
+      </div>
+      <div class="form-group">
+        <h4>Số ngày làm việc (Ngày)</h4>
+        <input class="form-control w-25" id="workingDay" />
+      </div>
+      <button class="btn btn-primary" id="tinhSalary"> Tính lương</button>
+      <div class="form-group">
+        <span id="yourSalary">Lương của bạn:</span>
+        <h4 id="Salary"> xxx VNĐ </h4>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="Bai2"> 
+    <div class="container">
+      <h3>TÍNH GIÁ TRỊ TRUNG BÌNH CỦA 5 SỐ THỰC</h3>
+      <div class="form-group">
+        <h5>Số thực 1</h5>
+        <input class="form-control w-25" id="soThuc1" />
+      </div>
+      <div class="form-group">
+        <h5>Số thực 2</h5>
+        <input class="form-control w-25" id="soThuc2" />
+      </div>
+      <div class="form-group">
+        <h5>Số thực 3</h5>
+        <input class="form-control w-25" id="soThuc3" />
+      </div>
+        <div class="form-group">
+          <h5>Số thực 4</h5>
+        <input class="form-control w-25" id="soThuc4" />
+      </div>
+        <div class="form-group">
+          <h5>Số thực 5</h5>
+        <input class="form-control w-25" id="soThuc5" />
+      </div>
+      <button class="btn btn-danger" id="average">Tính trung bình cộng </button>
+      <div class="form-group">
+        <h3>Giá trị trung bình của 5 số thực là: </h3>
+        <h2 id="trungBinh">xx</h2>
+      </div>
+    
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Bai 3 -->
+  <div class="Bai3">
+    <div class="container">
+      <h3>BÀI TẬP 3: QUY ĐỔI TIỀN USD SANG VNĐ</h3>
+      <div class="form-group">
+        <p>Tỉ giá 1$ = 23500 VNĐ</p>
+      </div>
+      <div class="form-group">
+        <input class="form-control w-25" id="amountUSD" />
+      </div>
+      <button class="btn btn-success" id="buttonTinh">
+        Tính
+      </button>
+      <div class="form-group">
+        <span>Giá trị quy đổi sang VNĐ:</span>
+        <div class="form-group">
+          <h3 id="ketQua"> 23500 VNĐ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+   <!-- Bai 4 -->
+
+   <section class="Bai4">
+     <div class="container">
+       <h2>BÀI TẬP 4: Tính chu vi, diện tích hình chữ nhật</h2>
+       <div class="form-group">
+         <h5>Nhập vào chiều dài</h5>
+         <input class="form-control w-25" id="chieuDai"/>
+       </div>
+       <div class="form-group">
+        <h5>Nhập vào chiều rộng </h5>
+        <input class="form-control w-25" id="chieuRong"/>
+      </div>
+      <button class="btn btn-success" id="xuLy">Tính</button>
+      <div>
+        <h4 >Chu vi hình chữ nhật là: </h4>
+        <h3 id="chuVi"> xxx (đơn vị)) </h3>
+        <h4 >Diện tích hình chữ nhật là: </h4>
+        <h3 id="dienTich"> xxx (đơn vị)) </h3>
+      </div>
+     </div>
+   </section>
+   <br>
+   <br>
+   <br>
+     <!-- Bai 5 -->
+     <section class="Bai5">
+       <div class="container">
+         <div class="form-group">
+           <h3>BÀI TẬP 5: TÍNH TỔNG 2 KÝ SỐ</h3>
+           <h4>Nhập vào số có 2 chữ số</h4>
+           <input class="form-cotrol w-25" id="number2"/>
+         </div>
+         <button class="btn btn-danger" id="tong2So">
+           Tính tổng
+         </button>
+         <div>
+           <h4>Tổng 2 ký số là: </h4>
+           <h3 id="kquaTong">xx</h3>
+         </div>
+       </div>
+     </section>
+
+  <script src="./main.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
